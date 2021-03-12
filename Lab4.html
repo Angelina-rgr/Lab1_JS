@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>Задание 4</title>
+<meta charset="utf-8">
+</head>
+<body>
+	<h1>Password: angelegorova</h1>
+<script language="JavaScript" type="text/JavaScript">
+function sravnenie()
+{
+var x, y;
+x=parseInt(prompt("Введите значение х",''));
+y=parseInt(prompt("Введите значение у",'')); 
+if(x<y)
+{
+alert(" Максимальное число - y");
+}
+else if(x>y)
+{
+alert(" Максимальное число - x");
+}
+else
+{
+alert(" Числа равны!");
+}
+}
+function enter_password()
+{
+var password = "angelegorova";
+if(password == prompt("Введите пароль: "))
+{
+	alert("Пароль введен верно!");
+}
+else
+{
+	alert("Пароль введен НЕ верно!");
+	enter_password();
+}
+}
+
+sravnenie();
+setTimeout(enter_password,1000);
+
+</script>
+<div>
+     	<a  href="Lab3.html"><button>Задание №3</button></a>
+     	<a href="Lab5.html"><button>Задание №5</button></a>
+     </div>
+</body>
+</html>
