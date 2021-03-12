@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<html lang="ru">
+<head>
+	<title>LabWork7</title>
+	<meta charset="utf-8">
+
+  <script type="text/javascript">
+    function sortirovka(){
+      predmet = new Array("алгебра", "физика", "химия", "геометрия", "информатика", "астрономия","русский", "литература", "иностранный язык", "обществознание", "история", "философия");
+      document.write("Уроки: "+predmet);
+      tehnich  = new Array();
+      gum = new Array();
+      tehnich  = predmet.slice(0,5);
+      gum = predmet.slice(5,10);
+      for(var i = 0; i < tehnich.length; i++)
+      document.write("<tr><td>"+tehnich[i]+"</td><td>"+gum[i]+"</td></tr>"); 
+    }
+  </script>
+
+</head>
+<body>
+        <h1>Предметы</h1>
+
+  		<table>
+        <tr>
+          <th>Точные науки</th>
+          <th>Гуманитарные науки</th>
+        </tr>
+     <script type="text/javascript">
+            sortirovka();
+     </script>
+
+     </table>
+
+     <div>
+      <a  href="Lab6.html"><button>Задание №6</button></a>
+     </div>
+</body>
+</html>
